@@ -1,0 +1,13 @@
+﻿.mydropdownlist {
+    color: #0fca98;
+    font-size: 15px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #1b2132;
+    font-weight: bold;
+}
+
+.mydetails {
+    border-radius: 5px;
+    font-weight: bold;
+}
