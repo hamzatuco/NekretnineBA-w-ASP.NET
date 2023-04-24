@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="slike/fav.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prodaja</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/prodaja.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <link rel="stylesheet" href="prodaja-css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/colors.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+</head>
+<body style="background-color:#1b2132;">
+    <br>
+    <!-- NAVBAR -->
+    <nav id="navbar" class="navbar navbar-expand-sm" style="background-color: #1b2132; top: -2px; left: -3px;">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="slike/logo.png" alt="logo detail" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-main">
+                <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-main">
+                <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html#about">O nama</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="prodaja.html">Prodaja</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#projects">Ponude</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Kontakt.aspx">Kontakt</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Admin.aspx">Admin</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="StanoviDetalji.aspx">Lokacije stanova</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Ucenici.aspx">Ucenici</a>
+                    </li>
+
+
+
+
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <section class="featured" id="featured">
+
+        <h1 class="heading"> <span>Istaknute</span> nekretnine   </h1>
+        <br><br><br>
+        <center>
+           
+        
+        <br><br><br>
+        <!-- code by w3codegenerator.com -->
+        <button  style="height: 60px; width: 300px; font-size: 13pt; background-color: aquamarine " type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Objavi nekretninu</button>
+        <div class="modal fade" id="myModal" data-backdrop="static">
+            <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Objavite nekretninu</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <label for="title">Naziv:</label><br>
+                            <input type="text" id="title" name="title"><br>
+                            <label for="adress">Adress:</label><br>
+                            <input type="text" id="adress" name="adress"><br>
+                            <label for="square">Kvadratura:</label><br>
+                            <input type="text" id="square" name="square"><br>
+                            <label for="rooms">Sobe:</label><br>
+                            <input type="text" id="rooms" name="rooms"><br>
+                            <label for="price">Cijena:</label><br>
+                            <input type="text" id="price" name="price"><br>
+                            <label for="email">Email:</label><br>
+                            <input type="email" id="email" name="email"><br>
+                            <label for="phone">Phone:</label><br>
+                            <input type="text" id="phone" name="phone"><br><br>
+                          
+                        </form>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button style="height: 30px; width: 100px; font-size: 9pt; background-color: aquamarine " type="button" class="btn btn-secondary" data-dismiss="modal">Odustani</button>
+                        <button style="height: 30px; width: 100px; font-size: 9pt; background-color: aquamarine " type="button" class="btn btn-primary">Objavi</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </center>
+        <br><br><br>
+        <br><br><br>
+
+
+        <div class="box-container">
+
+            <div class="box">
+                <div class="image-container">
+                    <img src="slike/brod.jpg" alt="">
+                    <div class="info">
+                        <h3>Na izdavanje</h3>
+                    </div>
+
+                </div>
+                <div class="content">
+                    <div class="price">
+                        <h3>Po dogovoru</h3>
+                        <a href="mailto:htuco04@gmail.com" class="fas fa-envelope"></a>
+                        <a href="tel:+38766188110" class="fas fa-phone"></a>
+                    </div>
+                    <div class="location">
+                        <h3>Namješten stan u Bosanskom Brodu</h3>
+                        <p>Vinogorska ulica, 74450 Bosanski Brod</p>
+                    </div>
+                    <div class="details">
+                        <h3> <i class="fas fa-expand"></i> 71 m2 </h3>
+                        <h3> <i class="fas fa-bed"></i> 2 spavaće</h3>
+                        <h3> <i class="fas fa-bath"></i> 2 kupatila</h3>
+                    </div>
+                    <div class="buttons">
+                        <a href="#" class="btn">Kupi</a>
+                        <a href="https://www.olx.ba/artikal/47532302/stan-na-prodaju/" target="_blank" class="btn">Detalji</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image-container">
+                    <img src="slike/sa.jpg" alt="">
+                    <div class="info">
+                        <h3>Prodaja</h3>
+                    </div>
+
+
+                </div>
+                <div class="content">
+                    <div class="price">
+                        <h3>KM 150.000</h3>
+                        <a href="mailto:htuco04@gmail.com" class="fas fa-envelope"></a>
+                        <a href="tel:+387 33 212 555" class="fas fa-phone"></a>
+                    </div>
+                    <div class="location">
+                        <h3>Stan na Koševu</h3>
+                        <p>Ulica Patriotske lige, 71000 Sarajevo</p>
+                    </div>
+                    <div class="details">
+                        <h3> <i class="fas fa-expand"></i> 150 m2 </h3>
+                        <h3> <i class="fas fa-bed"></i> 3 spavaće </h3>
+                        <h3> <i class="fas fa-bath"></i> 1 kupatilo </h3>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="buttons">
+                        <a href="#" class="btn">Kupi</a>
+                        <a href="https://www.olx.ba/artikal/19837229/kosevsko-brdo-adaptiran-dvoetazni-stan-na-prodaju/" target="_blank" class="btn">Detalji</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image-container">
+                    <img src="slike/bih.jpg" alt="">
+                    <div class="info">
+                        <h3>Na izdavanje</h3>
+                    </div>
+
+
+                </div>
+                <div class="content">
+                    <div class="price">
+                        <h3>KM 500/mjesec</h3>
+                        <a href="mailto:htuco04@gmail.com" class="fas fa-envelope"></a>
+                        <a href="tel:+387 33 123123" class="fas fa-phone"></a>
+                    </div>
+                    <div class="location">
+                        <h3>Stan u centru Bihaća</h3>
+                        <p>Ulica Dobrih Bošnjaka, 77000 Bihać</p>
+                    </div>
+                    <div class="details">
+                        <h3> <i class="fas fa-expand"></i> 108 m2 </h3>
+                        <h3> <i class="fas fa-bed"></i> 1 spavaća </h3>
+                        <h3> <i class="fas fa-bath"></i> 1 kupatilo </h3>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="buttons">
+                        <a href="#" class="btn">Kupi</a>
+                        <a href="https://www.olx.ba/artikal/34622449/stan-bihac-ozimice-i-na-prodaju/" target="_blank" class="btn">Detalji</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image-container">
+                    <img src="slike/bL.jpg" alt="">
+                    <div class="info">
+                        <h3>Prodaja</h3>
+                    </div>
+
+
+                </div>
+                <div class="content">
+                    <div class="price">
+                        <h3>KM 185.000</h3>
+                        <a href="mailto:htuco04@gmail.com" class="fas fa-envelope"></a>
+                        <a href="tel:+387 33 123123" class="fas fa-phone"></a>
+                    </div>
+                    <div class="location">
+                        <h3>Stan u centru Bihaća</h3>
+                        <p>Ulica Uroša Nejakog, 78000 Banja Luka</p>
+                    </div>
+                    <div class="details">
+                        <h3> <i class="fas fa-expand"></i> 100 m2 </h3>
+                        <h3> <i class="fas fa-bed"></i> 2 spavaće </h3>
+                        <h3> <i class="fas fa-bath"></i> 1 kupatilo </h3>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="buttons">
+                        <a href="#" class="btn">Kupi</a>
+                        <a href="https://www.olx.ba/artikal/45042889/na-prodaju-cetverosoban-stan-od-100m2-hisete/" target="_blank" class="btn">Detalji</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <div class="image-container">
+                    <img src="slike/sa2.jpg" alt="">
+                    <div class="info">
+                        <h3>Prodaja</h3>
+                    </div>
+
+
+                </div>
+                <div class="content">
+                    <div class="price">
+                        <h3>KM 390.000</h3>
+                        <a href="mailto:htuco04@gmail.com" class="fas fa-envelope"></a>
+                        <a href="tel:+387 33 123123" class="fas fa-phone"></a>
+                    </div>
+                    <div class="location">
+                        <h3>Stan na Skenderiji</h3>
+                        <p>Ulica Stolačka , 71000 Sarajevo</p>
+                    </div>
+                    <div class="details">
+                        <h3> <i class="fas fa-expand"></i> 73 m2 </h3>
+                        <h3> <i class="fas fa-bed"></i> 2 spavaće </h3>
+                        <h3> <i class="fas fa-bath"></i> 2 kupatila</h3>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="buttons">
+                        <a href="#" class="btn">Kupi</a>
+                        <a href="https://www.olx.ba/artikal/46220741/trosoban-stan-73m2-u-novogradnja-skenderija-na-prodaju/" target="_blank" class="btn">Detalji</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <div class="image-container">
+                    <img src="slike/tuz.jpg" alt="">
+                    <div class="info">
+                        <h3>Prodaja</h3>
+                    </div>
+
+                </div>
+                <div class="content">
+                    <div class="price">
+                        <h3>KM 279.000</h3>
+
+                        <a href="mailto:htuco04@gmail.com" class="fas fa-envelope"></a>
+                        <a href="tel:+387 33 123123" class="fas fa-phone"></a>
+                    </div>
+                    <div class="location">
+                        <h3>Luksuzan polunamješten stan u Tuzli, Slavinovići</h3>
+                        <p>Ulica Izeta Sarajlića, 75000 Tuzla</p>
+                    </div>
+                    <div class="details">
+                        <h3> <i class="fas fa-expand"></i> 100 m2 </h3>
+                        <h3> <i class="fas fa-bed"></i> 3 spavaće </h3>
+                        <h3> <i class="fas fa-bath"></i> 2 kupatila </h3>
+                    </div>
+                    <div class="buttons">
+                        <a href="#" class="btn">Kupi</a>
+                        <a href="https://www.olx.ba/artikal/48019460/luksuzan-polunamjesten-stan-u-tuzli-slavinovici/" target="_blank" class="btn">Detalji</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+    </section>
+    <footer class="footer footer1">
+        <div class="container pt-5 pb-5">
+            <div class="row">
+                <div class="col-md-6 mb-5">
+                    <img class="foot-logo" src="slike/logo.png" alt="Logo School">
+                    <br><br>
+
+                    <img class="foot-logo" src="slike/logoHTpng.png" alt="" srcset="">
+                </div>
+
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-4 foot-col mb-2">
+                            <h4>O nama</h4>
+                            <p>
+                                Ulica branilaca Starog Viteza <br>
+                                72250, Vitez<br>
+                                Telefon: 062 336 334
+                            </p>
+                        </div>
+                        <div class="col-md-4 foot-col mb-2">
+                            <h4>Dokumentacija</h4>
+                            <p><a href="#">Blog & Articles</a></p>
+                            <p><a href="#">Terms and Conditions</a></p>
+                            <p><a href="#">Privacy Policy</a></p>
+                            <p><a href="#">Contact</a></p>
+                        </div>
+                        <div class="col-md-4 foot-col mb-2">
+                            <h4>Navigacija</h4>
+                            <p><a href="index.html#about">O nama</a></p>
+                            <p><a href="prodaja.html">Prodaja</a></p>
+                            <p><a href="index.html#projects">Ponude</a></p>
+                            <p><a href="Kontakt.aspx">Kontakt</a></p>
+                            <p><a href="Admin.aspx">Admin</a></p>
+                            <p><a href="StanoviDetalji.aspx">Lokacije stanova</a></p>
+                            <p><a href="Ucenici.aspx">Ucenici na projektu</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </footer>
+    <footer class="footer footer2">
+        <div class="container pt-3 pb-2">
+            <div class="row">
+                <div class="col-md-8 foot-bottom-text">
+                    <p>
+                        Website služi u komercijalne svrhe - HT Studios © 2022
+                        / All Rights Reserved
+                    </p>
+                </div>
+                <div class="col-md-4 social-links content-right">
+                    <a href="https://facebook.com/haamzat9" class="fb">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://twitter.com/elonmusk" class="tw">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://instagram.com/haamzat9" class="ig">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <!-- owl js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- fancybox -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <!-- custom js -->
+    <script src="js/scripts.js"></script>
+</body>
+</html>
